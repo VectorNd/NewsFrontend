@@ -7,15 +7,23 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Text, Progress, FlexboxGrid, Input, InputGroup, Button } from 'rsuite';
 import SearchIcon from '@rsuite/icons/Search';
+import { SuprSendProvider } from "@suprsend/react-headless";
 
 export default function App() {
   let allGenre = ['business', 'entertainment', 'health', 'science', 'sports', 'technology'];
   return (
     <>
+    <SuprSendProvider
+      workspaceKey="HIDT0RLWsjgwu7DaPZGP"
+      distinctId="rishabh.kamboj.eee21@itbhu.ac.in"
+      subscriberId="15vXZv2ujOziH5aazB2K8DwRwzlxAWHZvB2hgb31nwU" // Replace with actual user ID
+    >
       <div style={{ backgroundColor: '#16243C' }}>
         <Router>
-          <div style={{ overflowX: 'hidden' }}>
-            <Navbar title="Daily News" about="About Us" />
+        <div style={{ overflowX: 'hidden' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px' ,position : 'relative'}}>
+              <Navbar title="Daily News" about="About Us" />
+            </div>
             <div className="container">
               <Routes>
                 <Route exact path="/" element={<Main genre={'general'} />} />
@@ -31,6 +39,7 @@ export default function App() {
           </div>
         </Router>
       </div>
+      </SuprSendProvider>
     </>
   );
 }

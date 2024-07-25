@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
+import EnhancedNotificationSystem from './NotificationBell';
 
 export default function Navbar(props) {
 
@@ -60,6 +61,14 @@ export default function Navbar(props) {
                 </Link>
               </li>
             </ul>
+            <div style={{ 
+                  position: 'absolute', 
+                  right: '10px', 
+                  top: '50%', 
+                  transform: 'translateY(-50%)' 
+                }}>
+                  <EnhancedNotificationSystem/>
+              </div>
           </div>
         </div>
       </nav>
