@@ -2,30 +2,19 @@
   "name": "news-app",
   "version": "0.1.0",
   "private": true,
-<<<<<<< HEAD
-   "proxy" : "http://localhost:5000/",
-  "dependencies": {
-    "@react-navigation/native": "^6.1.17",
-    "@react-navigation/native-stack": "^6.9.26",
-=======
   "proxy": "http://localhost:5000/",
   "dependencies": {
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/native-stack": "^6.9.26",
     "@suprsend/react-headless": "^1.3.4",
     "@suprsend/react-inbox": "^3.2.0",
->>>>>>> 173f2b4 (Init)
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
-<<<<<<< HEAD
-    "dotenv": "^16.0.1",
-=======
     "components": "^0.1.0",
     "dotenv": "^16.0.1",
     "lucide-react": "^0.416.0",
->>>>>>> 173f2b4 (Init)
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-infinite-scroll-component": "^6.1.0",
@@ -60,11 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
-=======
   },
   "devDependencies": {
     "tailwind-scrollbar": "^3.1.0"
->>>>>>> 173f2b4 (Init)
   }
 }
