@@ -71,7 +71,8 @@ const EnhancedNotificationSystem = () => {
       </button>
       {showNotifications && (
         <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-xl overflow-hidden z-10 transition-all duration-200 ease-out transform origin-top-right">
-          <div className="max-h-[80vh] overflow-y-auto">
+          <div className="max-h-[80vh] overflow-y-auto" style = {{maxHeight : "95vh", overflowY : "auto"}}>
+          {/* // style = {{height : "95vh", overflowY : "auto"}}>  */}
             <div className="sticky top-0 px-4 py-2 bg-gray-100 flex justify-between items-center border-b border-gray-200">
               <h3 className="font-semibold text-gray-800">Notifications</h3>
               <div className="flex items-center space-x-2">
